@@ -98,18 +98,30 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gC1-l4-nr0">
                                         <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="rvi-Vn-gph" eventType="touchUpInside" id="L78-6d-2DZ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78n-3q-Ls4">
                                         <rect key="frame" x="0.0" y="40" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="rvi-Vn-gph" eventType="touchUpInside" id="Ciu-Nl-4nx"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afJ-nk-61u">
                                         <rect key="frame" x="0.0" y="80" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="rvi-Vn-gph" eventType="touchUpInside" id="enZ-gC-HYD"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKU-my-2w4">
                                         <rect key="frame" x="0.0" y="120" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="rvi-Vn-gph" eventType="touchUpInside" id="0yS-Ip-wDB"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -125,7 +137,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wff-jS-g0c">
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wff-jS-g0c">
                                                 <rect key="frame" x="326" y="0.0" width="51" height="31"/>
                                             </switch>
                                         </subviews>
@@ -139,7 +151,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eb0-x6-uNw">
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Eb0-x6-uNw">
                                                 <rect key="frame" x="326" y="0.0" width="51" height="31"/>
                                             </switch>
                                         </subviews>
@@ -153,7 +165,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O0m-s5-Btr">
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="O0m-s5-Btr">
                                                 <rect key="frame" x="326" y="0.0" width="51" height="31"/>
                                             </switch>
                                         </subviews>
@@ -167,7 +179,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9yW-oe-mBS">
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9yW-oe-mBS">
                                                 <rect key="frame" x="326" y="0.0" width="51" height="31"/>
                                             </switch>
                                         </subviews>
@@ -175,6 +187,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWX-RY-H2o">
                                         <rect key="frame" x="0.0" y="204" width="375" height="30"/>
                                         <state key="normal" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="multipleAnswerButtonPressed:" destination="rvi-Vn-gph" eventType="touchUpInside" id="d1d-P9-PBc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -187,14 +202,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="180" translatesAutoresizingMaskIntoConstraints="NO" id="diT-sX-WKk">
                                         <rect key="frame" x="0.0" y="50" width="375" height="20.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWg-4g-lby">
-                                                <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWg-4g-lby">
+                                                <rect key="frame" x="0.0" y="0.0" width="97.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5H-XT-Rwp">
-                                                <rect key="frame" x="333" y="0.0" width="42" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5H-XT-Rwp">
+                                                <rect key="frame" x="277.5" y="0.0" width="97.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -204,6 +219,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Jt-9Y-f8q">
                                         <rect key="frame" x="0.0" y="90.5" width="375" height="30"/>
                                         <state key="normal" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="rangedAnswerButtonPressed:" destination="rvi-Vn-gph" eventType="touchUpInside" id="y3u-WO-GeG"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -243,10 +261,15 @@
                         <outlet property="multiLabel3" destination="CGN-GS-wIV" id="o5m-tw-xho"/>
                         <outlet property="multiLabel4" destination="fmf-bi-1CC" id="Xx0-zh-yef"/>
                         <outlet property="multiStackView" destination="V0d-2t-Z2A" id="BgK-O0-wUO"/>
+                        <outlet property="multiSwitch1" destination="wff-jS-g0c" id="puu-l4-8HG"/>
+                        <outlet property="multiSwitch2" destination="Eb0-x6-uNw" id="r8F-gl-GeD"/>
+                        <outlet property="multiSwitch3" destination="O0m-s5-Btr" id="UKg-h2-9lx"/>
+                        <outlet property="multiSwitch4" destination="9yW-oe-mBS" id="KD4-xm-FjB"/>
                         <outlet property="questionLabel" destination="uLC-dv-hmx" id="HuQ-IS-NMO"/>
                         <outlet property="questionProgressView" destination="TFP-Hc-bXI" id="RRu-7W-czg"/>
                         <outlet property="rangedLabel1" destination="yWg-4g-lby" id="lCG-FV-WPw"/>
                         <outlet property="rangedLabel2" destination="G5H-XT-Rwp" id="KXq-ok-wTl"/>
+                        <outlet property="rangedSlider" destination="JzU-YD-4sb" id="f9c-px-M19"/>
                         <outlet property="rangedStackView" destination="oFi-Lo-9wo" id="F9c-7Z-7Uc"/>
                         <outlet property="singleButton2" destination="78n-3q-Ls4" id="xJf-gy-4Zl"/>
                         <outlet property="singleButton3" destination="afJ-nk-61u" id="e9Y-Jo-wfo"/>
