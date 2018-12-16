@@ -294,7 +294,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qJ7-ba-3AG">
                                 <rect key="frame" x="0.0" y="289.5" width="375" height="88.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDv-qZ-7c9">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDv-qZ-7c9">
                                         <rect key="frame" x="129" y="0.0" width="117" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <nil key="textColor"/>
@@ -319,10 +319,19 @@
                         <viewLayoutGuide key="safeArea" id="w9K-3Y-PXB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Results" id="yuA-Ls-b85">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="C56-cR-Maz"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="C56-cR-Maz">
+                            <connections>
+                                <segue destination="Zss-Nw-zAA" kind="unwind" unwindAction="unwindToQuizIntroductionWithSegue:" id="RMv-JX-nSp"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultAnswerLabel" destination="oDv-qZ-7c9" id="EmC-qs-GrE"/>
+                        <outlet property="resultDefinitionLabel" destination="Uju-Hg-v9w" id="0cC-ke-dXn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0xU-Fi-buI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Zss-Nw-zAA" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2240.8000000000002" y="132.68365817091455"/>
         </scene>

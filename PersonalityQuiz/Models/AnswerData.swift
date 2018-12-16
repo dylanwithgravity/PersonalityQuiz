@@ -22,7 +22,7 @@ enum VacationType: Character {
         case .city:
             return "You want to be around a bunch of people. Live life in the city!"
         case .cruise:
-            return "Venture off to a tropical island, set out to the sea.!"
+            return "Venture off to a tropical island, set out to the sea!"
         case .mountains:
             return "Get away from the big building and see some mountains and perhaps go camping!"
         case .roadtrip:
